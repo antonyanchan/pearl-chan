@@ -1,0 +1,116 @@
+{
+  "command": [
+    {
+      "name": "help",
+      "perms": [],
+      "actions": [
+        {
+          "name": "help menu",
+          "category": "Message",
+          "type": "Send Embed",
+          "fields": [
+            {
+              "name": "p!help",
+              "value": "Sí necesitas ayuda :3",
+              "inline": "true"
+            },
+            {
+              "name": "p!memes",
+              "value": "Te puedo enviar un meme divertido",
+              "inline": "true"
+            },
+            {
+              "name": "p!manada",
+              "value": "Te puedo decir cuales son las manadas actuales",
+              "inline": "true"
+            }
+          ],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "FF8CC0",
+          "title": "Ayuda",
+          "url": "",
+          "authorname": "Pearl-chan",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "¡Aquí muestro de lo que soy capaz!",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "memes",
+      "actions": [
+        {
+          "name": "2",
+          "category": "Message",
+          "type": "Send Image",
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "url": "https://pile.randimg.net/2/198/174619/memes.png",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "manada",
+      "actions": [
+        {
+          "name": "Estás son las manadas",
+          "category": "Message",
+          "type": "Send Embed",
+          "fields": [
+            {
+              "name": "Zona Arida",
+              "value": "Scorbunny",
+              "inline": "true"
+            },
+            {
+              "name": "Zona Costera",
+              "value": "Buizel",
+              "inline": "true"
+            },
+            {
+              "name": "Zona Central",
+              "value": "Stufful",
+              "inline": "true"
+            },
+            {
+              "name": "Zona Gélida",
+              "value": "Snorunt",
+              "inline": "true"
+            },
+            {
+              "name": "Zona Sombría",
+              "value": "Vullaby",
+              "inline": "true"
+            },
+            {
+              "name": "Zona Templada",
+              "value": "Morelull",
+              "inline": "true"
+            }
+          ],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "FF8CC0",
+          "title": "Manadas Actuales",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Las manadas que se encuentran disponibles de 16/08/2020 hasta 16/09/2020 son las siguientes.",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    }
+  ]
+}

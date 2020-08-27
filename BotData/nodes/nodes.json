@@ -1,0 +1,248 @@
+{
+  "nodes": [
+    {
+      "type": "command",
+      "name": "help",
+      "guid": "7942fe4c-dffa-4146-8cab-d254b3d80d5d",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "37eda463-a170-44f9-af54-61378ffc9294"
+          ]
+        }
+      ],
+      "x": 148,
+      "y": 188,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "help menu",
+      "guid": "37eda463-a170-44f9-af54-61378ffc9294",
+      "reactionFields": [],
+      "embedfields": [
+        {
+          "name": "p!help",
+          "value": "Sí necesitas ayuda :3",
+          "inline": "true"
+        },
+        {
+          "name": "p!memes",
+          "value": "Te puedo enviar un meme divertido",
+          "inline": "true"
+        },
+        {
+          "name": "p!manada",
+          "value": "Te puedo decir cuales son las manadas actuales",
+          "inline": "true"
+        }
+      ],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7942fe4c-dffa-4146-8cab-d254b3d80d5d"
+        }
+      ],
+      "x": 347,
+      "y": 182,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FF8CC0",
+        "Ayuda",
+        "",
+        "Pearl-chan",
+        "",
+        "",
+        "¡Aquí muestro de lo que soy capaz!",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "2",
+      "guid": "4c6186f6-c0fb-487a-8c57-32f6c69fd7ae",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "43626450-7bff-4b02-baa5-af2ed5db1bca"
+        }
+      ],
+      "x": 341,
+      "y": 421,
+      "rtype": "Message",
+      "rsubtype": "Send Image",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "https://pile.randimg.net/2/198/174619/memes.png",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "url",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "memes",
+      "guid": "43626450-7bff-4b02-baa5-af2ed5db1bca",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "4c6186f6-c0fb-487a-8c57-32f6c69fd7ae"
+          ]
+        }
+      ],
+      "x": 138,
+      "y": 407
+    },
+    {
+      "type": "command",
+      "name": "manada",
+      "guid": "c806e51b-3bf5-4f24-907f-39e206f8d8e9",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "c452390a-ed26-4821-aeac-972b6589b6f4"
+          ]
+        }
+      ],
+      "x": 145,
+      "y": 309
+    },
+    {
+      "type": "response",
+      "name": "Estás son las manadas",
+      "guid": "c452390a-ed26-4821-aeac-972b6589b6f4",
+      "reactionFields": [],
+      "embedfields": [
+        {
+          "name": "Zona Arida",
+          "value": "Scorbunny",
+          "inline": "true"
+        },
+        {
+          "name": "Zona Costera",
+          "value": "Buizel",
+          "inline": "true"
+        },
+        {
+          "name": "Zona Central",
+          "value": "Stufful",
+          "inline": "true"
+        },
+        {
+          "name": "Zona Gélida",
+          "value": "Snorunt",
+          "inline": "true"
+        },
+        {
+          "name": "Zona Sombría",
+          "value": "Vullaby",
+          "inline": "true"
+        },
+        {
+          "name": "Zona Templada",
+          "value": "Morelull",
+          "inline": "true"
+        }
+      ],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c806e51b-3bf5-4f24-907f-39e206f8d8e9"
+        }
+      ],
+      "x": 356,
+      "y": 287,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FF8CC0",
+        "Manadas Actuales",
+        "",
+        "",
+        "",
+        "",
+        "Las manadas que se encuentran disponibles de 16/08/2020 hasta 16/09/2020 son las siguientes.",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ]
+    }
+  ]
+}
